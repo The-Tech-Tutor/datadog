@@ -7,8 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class TimedConfiguration {
-    //Example can be found under documentation for the @Timed annotation
-    //https://micrometer.io/docs/concepts
+    //https://micrometer.io/docs/concepts#_the_timed_annotation
     @Bean
     public TimedAspect timedAspect(MeterRegistry registry) {
         return new TimedAspect(registry);
